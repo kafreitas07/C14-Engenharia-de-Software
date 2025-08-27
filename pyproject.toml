@@ -1,18 +1,19 @@
-[project]
-name = "Engenharia_Software"
+[tool.poetry]
+name = "engenharia_software"
 version = "0.1.0"
 description = "Dependencias-versionamento"
-authors = [
-    {name = "Kaik", email = "you@example.com"}
-]
-readme = "README.md"
-requires-python = ">=3.13"
-
-[tool.poetry]
-package-mode = false  # Desabilita a instalação do pacote
+authors = ["Kaik <you@example.com>"]
+package-mode = false  # não empacota
 
 [tool.poetry.dependencies]
+python = ">=3.13,<4.0"
 numpy = "^2.3.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]

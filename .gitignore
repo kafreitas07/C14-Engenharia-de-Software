@@ -1,21 +1,35 @@
-# Ambiente virtual
-venv/
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+
 .venv/
+venv/
 
-# Arquivos do Poetry
-.mypy_cache/
+build/
+dist/
+*.egg-info/
+
 .pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
 
-# Arquivos de editores de código/IDE
+.mypy_cache/
+.pytype/
+.ruff_cache/
+.dmypy.json
+.pyre/
+
 .vscode/
 .idea/
 *.swp
 .DS_Store
-
-# Arquivos de build
-dist/
-build/
-*.egg-info/
-
-# Arquivos de sistema
+Thumbs.db
 desktop.ini
+
+.env
+.env.*
