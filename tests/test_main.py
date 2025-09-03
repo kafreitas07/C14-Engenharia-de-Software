@@ -7,3 +7,6 @@ def test_calcular_matriz():
                                      [14, 16, 18]])
     resultado_obtido = calcular_matriz()
     np.testing.assert_array_equal(resultado_obtido, resultado_esperado)
+
+
+#testa se a função retorna o valor esperado
